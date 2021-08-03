@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% load crispy_forms_tags %}
+
+{% block title %}{% trans 'Contact - We are here 24/7 to attend to your needs' %} {{block.super|upper}}{% endblock title %}
+
+{% block desc %}{% trans 'Feel free to contact our help desk during the day time 9am - 5pm' %}{% endblock %}
+
+{% block slider %}
+<!-- Page Title
+============================================= -->
+<section id="page-title" class="bg-color">
+
+    <div class="container clearfix">
+        <h1>Contact Us</h1>
+        <!-- <span>Quality You can be assured</span> -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+        </ol>
+    </div>
+
+</section><!-- #page-title end -->
+{% endblock %}
+
+{% block content %}
+<div class="container clearfix">
+
+    <div class="row gutter-40 col-mb-80">
+        <!-- Postcontent
+        ============================================= -->
+        <div class="postcontent col-lg-9">
+
+            <h3>Send us an Email</h3>
+
+            <form class="mb-0" action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+
+                <!-- <div class="form-process">
+                    <div class="css3-spinner">
+                        <div class="css3-spinner-scaler"></div>
+                    </div>
+                </div> -->
+
+                {{ form|crispy }}
+
+                <button class="button button-3d m-0" type="submit" id="template-contactform-submit" value="submit">Send Message</button>
+
+                <input type="hidden" name="prefix" value="template-contactform-">
+
+            </form>
+
+        </div><!-- .postcontent end -->
+
+        <!-- Sidebar
+        ============================================= -->
+        <div class="sidebar col-lg-3">
+
+            <div class="widget clearfix">
+
+                <h3 class="mb-0 text-uppercase">Port Harcourt</h3><br>
+
+                <address>
+                    <strong>Headquarters:</strong><br>
+                    NO 2, SOTONYE BANIGO CLOSE, <br>
+                    SANI ABACHA ROAD, GRA PHASE III, <br>
+                    PORT HARCOURT, RV 50001
+                </address>
+                <abbr title="Phone Number"><strong>Phone:</strong></abbr> (234) 814 0063951<br>
+                <abbr title="Phone Number"><strong>Phone II:</strong></abbr> (234) 813 1505272<br>
+                <abbr title="Email Address"><strong>Email:</strong></abbr> info@etopocontrolservices.com
+
+                <div class="line line-sm"></div>
+            </div>
+
+            <div class="line line-sm"></div>
+
+            <div class="widget mt-0 clearfix">
+
+            </div>
+
+        </div><!-- .sidebar end -->
+    </div>
+
+</div>
+
+{% endblock content %}

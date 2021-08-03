@@ -1,0 +1,68 @@
+{% load static %}
+
+<!-- Hero
+		============================================= -->
+<section id="slider" class="slider-element slider-parallax swiper_wrapper min-vh-75" data-loop="true">
+
+    <div class="swiper-container swiper-parent">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="slider-caption">
+                        <div>
+                            <h2>Welcome to ECSNL</h2>
+                            <p class="">
+                                an indigenous and 100% Nigerian owned company established on 2002 by 
+                                its single owner HRH EMMANUEL ARIKAWEI which is presently the Company’s
+                                 Chairman of the Board, Chief Executive Officer and Managing Director.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide-bg"
+                    style="background-image: url('{% static "demos/construction/images/slider/2.jpg" %}'); background-position: center top;">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="slider-caption slider-caption-right">
+                        <div>
+                            <h2>Importance to Value</h2>
+                            <p class="">
+                                Our values represent our corporate personality. Timeless and unchanging, 
+                                they express how we do business. We abide by our values in our decision-making 
+                                process and ensure our corporate and individual behaviors demonstrate these 
+                                values at all times.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap">
+                    <video id="slide-video" poster="{% static 'demos/construction/images/videos/1.jpg' %}" preload="auto" loop autoplay
+                        muted>
+                        <source src='{% static "demos/construction/images/videos/1.webm" %}' type='video/webm' />
+                        <source src='{% static "demos/construction/images/videos/1.mp4" %}' type='video/mp4' />
+                    </video>
+                    <div class="video-overlay" style="background-color: rgba(0,0,0,0.1);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="slider-caption">
+                        <div>
+                            <h2>Premium Constructions</h2>
+                            <p class="">You'll be surprised to see the Final Results of your Creation
+                                &amp; would crave for more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide-bg"
+                    style="background-image: url('{% static "demos/construction/images/slider/1.jpg" %}'); background-position: center bottom;">
+                </div>
+            </div>
+        </div>
+        <div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+        <div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+    </div>
+
+</section>

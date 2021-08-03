@@ -1,0 +1,23 @@
+{% extends 'emails/base.html' %}
+{% load static %}
+
+{% url 'home' as dashboard_url %}
+{% block email_title %}
+{{contact_subject}}
+{% endblock %}
+
+{% block email_subject %}
+{{contact_subject}}
+{% endblock %}
+
+{% block email_body %}
+{{contact_message|safe}}
+{% endblock %}
+
+{% block button_activate %}
+{{ dashboard_url }}
+{% endblock %}
+
+{% block button_title %}
+VISIT OUR WEBSITE
+{% endblock %}

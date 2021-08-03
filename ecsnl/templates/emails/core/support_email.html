@@ -1,0 +1,30 @@
+{% extends "emails/base.html" %}
+{% load static i18n %}
+
+{% url 'home' as dashboard_url %}
+
+{% block email_title %}
+New Mail from {{from_email}}
+{% endblock email_title %}
+
+{% block email_subject %}
+New Mail from {{from_email}}
+{% endblock email_subject %}
+
+{% block email_body %}
+{{message|safe}}
+{% endblock email_body %}
+
+{% block button_activate %}
+{{ dashboard_url }}
+{% endblock %}
+
+{% block button_title %}
+VISIT OUR WEBSITE
+{% endblock %}
+
+
+
+
+
+
