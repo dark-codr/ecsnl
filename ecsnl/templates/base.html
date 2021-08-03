@@ -57,10 +57,8 @@
   <script defer src="{% static 'js/iziToast.min.js' %}"></script>
 
   <!-- place project specific Javascript in this file -->
-  {% compress js inline %}
   <script defer src="{% static 'js/project.js' %}"></script>
   {% include "snippets/js.html" %}
-  {% endcompress %}
 
   {% endblock javascript %}
 
