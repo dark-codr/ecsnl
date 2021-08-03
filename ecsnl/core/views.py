@@ -26,7 +26,14 @@ def contact_view(request):
             html_message = render_to_string('emails/core/support_email.html', {'message': message, 'from_email': from_email, 'subject': subject})
 
             try:
-                send_mail(subject, message, from_email, ['info@etopocontrolservices.com'], html_message=html_message, fail_silently=False)
+                send_mail(
+                    subject, 
+                    message, 
+                    "noreply@etopocontrolservices.com", 
+                    ['info@etopocontrolservices.com'], 
+                    html_message=html_message, 
+                    fail_silently=False
+                    )
                 messages.success(request, "Your Email Has been sent successfuly")
             except BadHeaderError:
                 messages.error(request, "There was an error sending yout email at the moment, please try again later.")
