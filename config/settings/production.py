@@ -135,7 +135,7 @@ ANYMAIL = {}
 EMAIL_HOST = "smtp.etopocontrolservices.com"
 EMAIL_HOST_USER = env("EMAIL_HOST_USER", default='name@mail.com')# sendgrid
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", default="password.")
-EMAIL_PORT = 465 
+EMAIL_PORT = 25 
 # EMAIL_PORT = 567 
 
 # EMAIL_USE_TLS = True
