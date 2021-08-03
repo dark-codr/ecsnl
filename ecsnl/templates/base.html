@@ -1,4 +1,4 @@
-{% load static i18n compress%}
+{% load static i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,11 +34,9 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
   <!-- Your stuff: Third-party CSS libraries go here -->
-  {% compress css inline %}
   <!-- This file stores project-specific CSS -->
   {% include "snippets/css.html" %}
 
-  {% endcompress %}
   {% endblock %}
   <!-- Le javascript
     ================================================== -->
