@@ -132,7 +132,7 @@ INSTALLED_APPS += ["anymail"]  # noqa F405
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 ANYMAIL = {}
-EMAIL_HOST = "mail.etopocontrolservices.com"
+EMAIL_HOST = "premium202.web-hosting.com"
 EMAIL_HOST_USER = env("EMAIL_HOST_USER", default='name@mail.com')# sendgrid
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD", default="password.")
 EMAIL_PORT = 465
