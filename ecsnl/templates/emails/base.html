@@ -72,7 +72,7 @@
                                                             align="left">
 
                                                             <h1
-                                                                style="margin: 0px; color: #ecf0f1; line-height: 140%; text-align: center; word-wrap: break-word; font-weight: normal; font-family: 'Rubik',sans-serif; font-size: 35px;">
+                                                                style="margin: 0px; color: #3d481e; line-height: 140%; text-align: center; word-wrap: break-word; font-weight: normal; font-family: 'Rubik',sans-serif; font-size: 24px;">
                                                                 <strong>
                                                                     {% block email_subject %}
                                                                     {% endblock %}
@@ -126,10 +126,10 @@
                                                                         align="center">
 
                                                                         <img align="center" border="0"
-                                                                            src="{% static 'images/favicons/Group.svg' %}" alt="Image"
-                                                                            title="Image"
+                                                                            src="{% static 'images/favicons/Group.svg' %}"
+                                                                            alt="Image" title="Image"
                                                                             style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 31%;max-width: 179.8px;"
-                                                                            width="179.8" />
+                                                                            width="124.8" />
 
                                                                     </td>
                                                                 </tr>
@@ -153,9 +153,9 @@
                                                                 style="color: #ffffff; line-height: 200%; text-align: center; word-wrap: break-word;">
                                                                 <p style="line-height: 200%; font-size: 14px;">
                                                                     <span style="font-size: 16px; line-height: 32px;">
-                                                                    {% block email_body %}
+                                                                        {% block email_body %}
 
-                                                                    {% endblock %}
+                                                                        {% endblock %}
                                                                     </span>
                                                                 </p>
                                                             </div>
@@ -176,9 +176,11 @@
 
                                                             <div align="center">
                                                                 <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:'Montserrat',sans-serif;"><tr><td style="font-family:'Montserrat',sans-serif;" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:40px; v-text-anchor:middle; width:256px;" arcsize="0%" stroke="f" fillcolor="#fcd283"><w:anchorlock/><center style="color:#000000;font-family:'Montserrat',sans-serif;"><![endif]-->
-                                                                <a href="{% block button_activate %}{% endblock %}" target="_blank"
+                                                                <a href="{% block button_activate %}{% endblock %}"
+                                                                    target="_blank"
                                                                     style="box-sizing: border-box;display: inline-block;font-family:'Montserrat',sans-serif;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #000000; background-color: #fcd283; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;">
-                                                                    <span style="display:block;padding:12px 30px;line-height:120%;">
+                                                                    <span
+                                                                        style="display:block;padding:12px 30px;line-height:120%;">
                                                                         <strong>
                                                                             {% block button_title %}{% endblock %}
                                                                         </strong></span>
