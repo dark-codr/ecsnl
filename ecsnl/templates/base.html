@@ -54,7 +54,6 @@
     crossorigin="anonymous"></script> -->
 
   <!-- Your stuff: Third-party javascript libraries go here -->
-  <script async src="{% static 'js/iziToast.min.js' %}"></script>
 
   <!-- place project specific Javascript in this file -->
   <script defer src="{% static 'js/project.js' %}"></script>
@@ -89,7 +88,7 @@
 	<div id="gotoTop" class="icon-line-chevrons-up bg-color h-bg-color-2 shadow rounded-circle"></div>
 
   {% block modal %}{% endblock modal %}
-
+  <script src="{% static 'js/iziToast.min.js' %}"></script>
       {# izi message signals for django #}
       {% for message in messages %}
       <script type=text/javascript>
